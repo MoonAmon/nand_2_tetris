@@ -1,0 +1,17 @@
+//  for (i=0; i<n; i++){
+//      sum n if itself temp
+//}
+
+factor1 = RAM[0]
+n = RAM[1]
+i = 0
+sum = 0
+
+LOOP:
+    if (i > n) GOTO END 
+    sum = sum + factor1 
+    i = i + 1
+    GOTO LOOP 
+
+END:
+    GOTO END
